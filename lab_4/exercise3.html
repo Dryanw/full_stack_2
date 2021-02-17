@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>JS Window Methods</title>
+    <script>
+        function displayAlert(){
+            window.alert('Hi, this is an alert box.');
+        }
+
+        function displayPrompt(){
+            window.prompt('Hi, this is a prompt box.');
+        }
+
+        function displayConfirm(){
+            var result = window.confirm('Do you really want to close the browser?')
+            if (result){
+                window.close();
+            }
+        }
+
+    </script>
+</head>
+<body>
+
+<h3>JS Window Methods Exercise</h3>
+
+<!-- Modify the onclick calls below to call the JS functions -->
+<input type="button" value="Alert" onclick="displayAlert()" />
+<input type="button" value="Prompt" onclick="displayPrompt()" />
+<input type="button" value="Confirm" onclick="displayConfirm()" />
+
+</body>
+</html>
