@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Ex 3</title>
+</head>
+<body>
+
+    <div id="container">
+    </div>
+    <script>
+        var container = document.querySelector('#container');
+        let para = document.createElement('p');
+        para.innerHTML = 'this is a paragraph';
+        container.appendChild(para);
+        let t = document.createElement('span');
+        t.innerHTML = 'this is span';
+        container.appendChild(t);
+        let h = document.createElement('h1');
+        h.innerHTML = 'this is header';
+        container.appendChild(h);
+    </script>
+</body>
+</html>
